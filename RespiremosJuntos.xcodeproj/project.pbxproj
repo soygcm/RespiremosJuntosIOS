@@ -14,6 +14,8 @@
 		C0158BA11A8A9B52007F87AB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0158BA01A8A9B52007F87AB /* Images.xcassets */; };
 		C0158BA41A8A9B52007F87AB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0158BA21A8A9B52007F87AB /* LaunchScreen.xib */; };
 		C0158BB01A8A9B52007F87AB /* RespiremosJuntosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0158BAF1A8A9B52007F87AB /* RespiremosJuntosTests.swift */; };
+		C0158BBC1A8AA98A007F87AB /* MensajesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0158BBB1A8AA98A007F87AB /* MensajesViewController.swift */; };
+		C0158BBE1A8AAFD1007F87AB /* MensajeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0158BBD1A8AAFD1007F87AB /* MensajeCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +31,7 @@
 /* Begin PBXFileReference section */
 		C0158B921A8A9B52007F87AB /* RespiremosJuntos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RespiremosJuntos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0158B961A8A9B52007F87AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C0158B971A8A9B52007F87AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C0158B971A8A9B52007F87AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; wrapsLines = 1; };
 		C0158B991A8A9B52007F87AB /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		C0158B9B1A8A9B52007F87AB /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		C0158B9E1A8A9B52007F87AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -38,6 +40,8 @@
 		C0158BA91A8A9B52007F87AB /* RespiremosJuntosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RespiremosJuntosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0158BAE1A8A9B52007F87AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0158BAF1A8A9B52007F87AB /* RespiremosJuntosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RespiremosJuntosTests.swift; sourceTree = "<group>"; };
+		C0158BBB1A8AA98A007F87AB /* MensajesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MensajesViewController.swift; sourceTree = "<group>"; };
+		C0158BBD1A8AAFD1007F87AB /* MensajeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MensajeCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 				C0158B991A8A9B52007F87AB /* FirstViewController.swift */,
 				C0158B9B1A8A9B52007F87AB /* SecondViewController.swift */,
 				C0158B9D1A8A9B52007F87AB /* Main.storyboard */,
+				C0158BBD1A8AAFD1007F87AB /* MensajeCell.swift */,
+				C0158BBB1A8AA98A007F87AB /* MensajesViewController.swift */,
 				C0158BA01A8A9B52007F87AB /* Images.xcassets */,
 				C0158BA21A8A9B52007F87AB /* LaunchScreen.xib */,
 				C0158B951A8A9B52007F87AB /* Supporting Files */,
@@ -164,6 +170,7 @@
 				TargetAttributes = {
 					C0158B911A8A9B52007F87AB = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 3G6RLSL6TQ;
 					};
 					C0158BA81A8A9B52007F87AB = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -215,7 +222,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0158BBC1A8AA98A007F87AB /* MensajesViewController.swift in Sources */,
 				C0158B9C1A8A9B52007F87AB /* SecondViewController.swift in Sources */,
+				C0158BBE1A8AAFD1007F87AB /* MensajeCell.swift in Sources */,
 				C0158B981A8A9B52007F87AB /* AppDelegate.swift in Sources */,
 				C0158B9A1A8A9B52007F87AB /* FirstViewController.swift in Sources */,
 			);
