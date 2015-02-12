@@ -7,34 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C0158B981A8A9B52007F87AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0158B971A8A9B52007F87AB /* AppDelegate.swift */; };
+		C0158B9A1A8A9B52007F87AB /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0158B991A8A9B52007F87AB /* FirstViewController.swift */; };
+		C0158B9C1A8A9B52007F87AB /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0158B9B1A8A9B52007F87AB /* SecondViewController.swift */; };
 		C0158B9F1A8A9B52007F87AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0158B9D1A8A9B52007F87AB /* Main.storyboard */; };
 		C0158BA11A8A9B52007F87AB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0158BA01A8A9B52007F87AB /* Images.xcassets */; };
 		C0158BA41A8A9B52007F87AB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0158BA21A8A9B52007F87AB /* LaunchScreen.xib */; };
 		C0158BB01A8A9B52007F87AB /* RespiremosJuntosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0158BAF1A8A9B52007F87AB /* RespiremosJuntosTests.swift */; };
 		C0158BBC1A8AA98A007F87AB /* MensajesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0158BBB1A8AA98A007F87AB /* MensajesViewController.swift */; };
 		C0158BBE1A8AAFD1007F87AB /* MensajeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0158BBD1A8AAFD1007F87AB /* MensajeCell.swift */; };
-		C06CEB981A8C169100A71DA1 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C06CEB971A8C169100A71DA1 /* FacebookSDK.framework */; };
-		C06CEB9A1A8CFDF900A71DA1 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C06CEB991A8CFDF900A71DA1 /* ParseFacebookUtils.framework */; };
-		C0C4F44C1A8D5D5300E4621C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C4F44B1A8D5D5300E4621C /* LoginViewController.swift */; };
-		C0C4F44E1A8D5DB200E4621C /* BeneficiosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C4F44D1A8D5DB200E4621C /* BeneficiosViewController.swift */; };
-		C0C4F4501A8D5E1D00E4621C /* LugaresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C4F44F1A8D5E1D00E4621C /* LugaresViewController.swift */; };
-		C0C4F4521A8D5EC600E4621C /* AgregarAmigosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C4F4511A8D5EC600E4621C /* AgregarAmigosViewController.swift */; };
-		C0C4F4541A8D5F0F00E4621C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C4F4531A8D5F0F00E4621C /* AppDelegate.swift */; };
-		C0C4F4591A8D612800E4621C /* AmigosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C4F4581A8D612800E4621C /* AmigosViewController.swift */; };
-		C0C4F45B1A8D632D00E4621C /* EnviarMensajesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C4F45A1A8D632D00E4621C /* EnviarMensajesViewController.swift */; };
-		C0CFD2AC1A8BEFEA006C0446 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0CFD2AB1A8BEFEA006C0446 /* CFNetwork.framework */; };
-		C0CFD2AE1A8BEFF6006C0446 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0CFD2AD1A8BEFF6006C0446 /* CoreGraphics.framework */; };
-		C0CFD2B01A8BEFFF006C0446 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0CFD2AF1A8BEFFF006C0446 /* CoreLocation.framework */; };
-		C0CFD2B21A8BF00D006C0446 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0CFD2B11A8BF00D006C0446 /* MobileCoreServices.framework */; };
-		C0CFD2B41A8BF03D006C0446 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0CFD2B31A8BF03D006C0446 /* QuartzCore.framework */; };
-		C0CFD2B61A8BF044006C0446 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0CFD2B51A8BF044006C0446 /* Security.framework */; };
-		C0CFD2B81A8BF04E006C0446 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0CFD2B71A8BF04E006C0446 /* StoreKit.framework */; };
-		C0CFD2BA1A8BF058006C0446 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0CFD2B91A8BF058006C0446 /* SystemConfiguration.framework */; };
-		C0CFD2BC1A8BF069006C0446 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C0CFD2BB1A8BF069006C0446 /* libz.dylib */; };
-		C0CFD2BE1A8BF076006C0446 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C0CFD2BD1A8BF076006C0446 /* libsqlite3.dylib */; };
-		C0CFD2BF1A8BF07D006C0446 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0CFD2A81A8BEFAF006C0446 /* AudioToolbox.framework */; };
-		C0CFD2C21A8BF08C006C0446 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0CFD2C01A8BF08C006C0446 /* Bolts.framework */; };
-		C0CFD2C31A8BF08D006C0446 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0CFD2C11A8BF08C006C0446 /* Parse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +31,9 @@
 /* Begin PBXFileReference section */
 		C0158B921A8A9B52007F87AB /* RespiremosJuntos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RespiremosJuntos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0158B961A8A9B52007F87AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0158B971A8A9B52007F87AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; wrapsLines = 1; };
+		C0158B991A8A9B52007F87AB /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		C0158B9B1A8A9B52007F87AB /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		C0158B9E1A8A9B52007F87AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C0158BA01A8A9B52007F87AB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C0158BA31A8A9B52007F87AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -58,29 +42,6 @@
 		C0158BAF1A8A9B52007F87AB /* RespiremosJuntosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RespiremosJuntosTests.swift; sourceTree = "<group>"; };
 		C0158BBB1A8AA98A007F87AB /* MensajesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MensajesViewController.swift; sourceTree = "<group>"; };
 		C0158BBD1A8AAFD1007F87AB /* MensajeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MensajeCell.swift; sourceTree = "<group>"; };
-		C06CEB971A8C169100A71DA1 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
-		C06CEB991A8CFDF900A71DA1 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
-		C0C4F44B1A8D5D5300E4621C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		C0C4F44D1A8D5DB200E4621C /* BeneficiosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeneficiosViewController.swift; sourceTree = "<group>"; };
-		C0C4F44F1A8D5E1D00E4621C /* LugaresViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LugaresViewController.swift; sourceTree = "<group>"; };
-		C0C4F4511A8D5EC600E4621C /* AgregarAmigosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgregarAmigosViewController.swift; sourceTree = "<group>"; };
-		C0C4F4531A8D5F0F00E4621C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C0C4F4581A8D612800E4621C /* AmigosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmigosViewController.swift; sourceTree = "<group>"; };
-		C0C4F45A1A8D632D00E4621C /* EnviarMensajesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnviarMensajesViewController.swift; sourceTree = "<group>"; };
-		C0CFD2A81A8BEFAF006C0446 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		C0CFD2AB1A8BEFEA006C0446 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		C0CFD2AD1A8BEFF6006C0446 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		C0CFD2AF1A8BEFFF006C0446 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		C0CFD2B11A8BF00D006C0446 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		C0CFD2B31A8BF03D006C0446 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		C0CFD2B51A8BF044006C0446 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		C0CFD2B71A8BF04E006C0446 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		C0CFD2B91A8BF058006C0446 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		C0CFD2BB1A8BF069006C0446 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		C0CFD2BD1A8BF076006C0446 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		C0CFD2C01A8BF08C006C0446 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
-		C0CFD2C11A8BF08C006C0446 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
-		C0CFD2C51A8BF137006C0446 /* RespiremosJuntos-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RespiremosJuntos-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,21 +49,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0CFD2BF1A8BF07D006C0446 /* AudioToolbox.framework in Frameworks */,
-				C0CFD2BE1A8BF076006C0446 /* libsqlite3.dylib in Frameworks */,
-				C0CFD2BC1A8BF069006C0446 /* libz.dylib in Frameworks */,
-				C0CFD2C21A8BF08C006C0446 /* Bolts.framework in Frameworks */,
-				C0CFD2BA1A8BF058006C0446 /* SystemConfiguration.framework in Frameworks */,
-				C0CFD2B81A8BF04E006C0446 /* StoreKit.framework in Frameworks */,
-				C0CFD2C31A8BF08D006C0446 /* Parse.framework in Frameworks */,
-				C0CFD2B61A8BF044006C0446 /* Security.framework in Frameworks */,
-				C06CEB9A1A8CFDF900A71DA1 /* ParseFacebookUtils.framework in Frameworks */,
-				C0CFD2B41A8BF03D006C0446 /* QuartzCore.framework in Frameworks */,
-				C0CFD2B21A8BF00D006C0446 /* MobileCoreServices.framework in Frameworks */,
-				C0CFD2B01A8BEFFF006C0446 /* CoreLocation.framework in Frameworks */,
-				C0CFD2AE1A8BEFF6006C0446 /* CoreGraphics.framework in Frameworks */,
-				C0CFD2AC1A8BEFEA006C0446 /* CFNetwork.framework in Frameworks */,
-				C06CEB981A8C169100A71DA1 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,7 +66,6 @@
 			isa = PBXGroup;
 			children = (
 				C0158B941A8A9B52007F87AB /* RespiremosJuntos */,
-				C0CFD2AA1A8BEFB8006C0446 /* Frameworks */,
 				C0158BAC1A8A9B52007F87AB /* RespiremosJuntosTests */,
 				C0158B931A8A9B52007F87AB /* Products */,
 			);
@@ -138,18 +83,13 @@
 		C0158B941A8A9B52007F87AB /* RespiremosJuntos */ = {
 			isa = PBXGroup;
 			children = (
-				C0C4F44B1A8D5D5300E4621C /* LoginViewController.swift */,
-				C0C4F44D1A8D5DB200E4621C /* BeneficiosViewController.swift */,
-				C0158BBB1A8AA98A007F87AB /* MensajesViewController.swift */,
-				C0C4F4581A8D612800E4621C /* AmigosViewController.swift */,
-				C0C4F45A1A8D632D00E4621C /* EnviarMensajesViewController.swift */,
-				C0C4F44F1A8D5E1D00E4621C /* LugaresViewController.swift */,
-				C0C4F4511A8D5EC600E4621C /* AgregarAmigosViewController.swift */,
-				C0C4F4551A8D5F2700E4621C /* Cells */,
-				C0CFD2C41A8BF0C2006C0446 /* Objective-C */,
-				C0158BA01A8A9B52007F87AB /* Images.xcassets */,
-				C0C4F4531A8D5F0F00E4621C /* AppDelegate.swift */,
+				C0158B971A8A9B52007F87AB /* AppDelegate.swift */,
+				C0158B991A8A9B52007F87AB /* FirstViewController.swift */,
+				C0158B9B1A8A9B52007F87AB /* SecondViewController.swift */,
 				C0158B9D1A8A9B52007F87AB /* Main.storyboard */,
+				C0158BBD1A8AAFD1007F87AB /* MensajeCell.swift */,
+				C0158BBB1A8AA98A007F87AB /* MensajesViewController.swift */,
+				C0158BA01A8A9B52007F87AB /* Images.xcassets */,
 				C0158BA21A8A9B52007F87AB /* LaunchScreen.xib */,
 				C0158B951A8A9B52007F87AB /* Supporting Files */,
 			);
@@ -179,44 +119,6 @@
 				C0158BAE1A8A9B52007F87AB /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		C0C4F4551A8D5F2700E4621C /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				C0158BBD1A8AAFD1007F87AB /* MensajeCell.swift */,
-			);
-			name = Cells;
-			sourceTree = "<group>";
-		};
-		C0CFD2AA1A8BEFB8006C0446 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C06CEB991A8CFDF900A71DA1 /* ParseFacebookUtils.framework */,
-				C06CEB971A8C169100A71DA1 /* FacebookSDK.framework */,
-				C0CFD2C01A8BF08C006C0446 /* Bolts.framework */,
-				C0CFD2C11A8BF08C006C0446 /* Parse.framework */,
-				C0CFD2BD1A8BF076006C0446 /* libsqlite3.dylib */,
-				C0CFD2BB1A8BF069006C0446 /* libz.dylib */,
-				C0CFD2B91A8BF058006C0446 /* SystemConfiguration.framework */,
-				C0CFD2B71A8BF04E006C0446 /* StoreKit.framework */,
-				C0CFD2B51A8BF044006C0446 /* Security.framework */,
-				C0CFD2B31A8BF03D006C0446 /* QuartzCore.framework */,
-				C0CFD2B11A8BF00D006C0446 /* MobileCoreServices.framework */,
-				C0CFD2AF1A8BEFFF006C0446 /* CoreLocation.framework */,
-				C0CFD2AD1A8BEFF6006C0446 /* CoreGraphics.framework */,
-				C0CFD2AB1A8BEFEA006C0446 /* CFNetwork.framework */,
-				C0CFD2A81A8BEFAF006C0446 /* AudioToolbox.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C0CFD2C41A8BF0C2006C0446 /* Objective-C */ = {
-			isa = PBXGroup;
-			children = (
-				C0CFD2C51A8BF137006C0446 /* RespiremosJuntos-Bridging-Header.h */,
-			);
-			name = "Objective-C";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,15 +222,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0C4F45B1A8D632D00E4621C /* EnviarMensajesViewController.swift in Sources */,
-				C0C4F4541A8D5F0F00E4621C /* AppDelegate.swift in Sources */,
-				C0C4F4501A8D5E1D00E4621C /* LugaresViewController.swift in Sources */,
-				C0C4F4521A8D5EC600E4621C /* AgregarAmigosViewController.swift in Sources */,
-				C0C4F44C1A8D5D5300E4621C /* LoginViewController.swift in Sources */,
-				C0C4F4591A8D612800E4621C /* AmigosViewController.swift in Sources */,
 				C0158BBC1A8AA98A007F87AB /* MensajesViewController.swift in Sources */,
-				C0C4F44E1A8D5DB200E4621C /* BeneficiosViewController.swift in Sources */,
+				C0158B9C1A8A9B52007F87AB /* SecondViewController.swift in Sources */,
 				C0158BBE1A8AAFD1007F87AB /* MensajeCell.swift in Sources */,
+				C0158B981A8A9B52007F87AB /* AppDelegate.swift in Sources */,
+				C0158B9A1A8A9B52007F87AB /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,18 +351,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/RespiremosJuntos/parse-library-1.6.2",
-					"$(PROJECT_DIR)",
-					/Users/gabriel/Documents/FacebookSDK,
-				);
 				INFOPLIST_FILE = RespiremosJuntos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "RespiremosJuntos/RespiremosJuntos-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -472,17 +361,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/RespiremosJuntos/parse-library-1.6.2",
-					"$(PROJECT_DIR)",
-					/Users/gabriel/Documents/FacebookSDK,
-				);
 				INFOPLIST_FILE = RespiremosJuntos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "RespiremosJuntos/RespiremosJuntos-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -539,7 +420,6 @@
 				C0158BB51A8A9B52007F87AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 		C0158BB61A8A9B52007F87AB /* Build configuration list for PBXNativeTarget "RespiremosJuntosTests" */ = {
 			isa = XCConfigurationList;
@@ -548,7 +428,6 @@
 				C0158BB81A8A9B52007F87AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
