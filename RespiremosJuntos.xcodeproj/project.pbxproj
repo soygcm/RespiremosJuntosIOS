@@ -15,6 +15,13 @@
 		C0158BBE1A8AAFD1007F87AB /* MensajeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0158BBD1A8AAFD1007F87AB /* MensajeCell.swift */; };
 		C06CEB981A8C169100A71DA1 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C06CEB971A8C169100A71DA1 /* FacebookSDK.framework */; };
 		C06CEB9A1A8CFDF900A71DA1 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C06CEB991A8CFDF900A71DA1 /* ParseFacebookUtils.framework */; };
+		C0BD05131AFFDA150069031F /* Benefit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BD05121AFFDA150069031F /* Benefit.swift */; };
+		C0BD05171B010B7B0069031F /* BenefitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BD05161B010B7B0069031F /* BenefitCell.swift */; };
+		C0BD051B1B01162B0069031F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BD051A1B01162B0069031F /* User.swift */; };
+		C0BD051D1B03B4810069031F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0BD051C1B03B4810069031F /* MapKit.framework */; };
+		C0BD051F1B03B8710069031F /* PlaceAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BD051E1B03B8710069031F /* PlaceAnnotation.swift */; };
+		C0BD05211B03B8BA0069031F /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BD05201B03B8BA0069031F /* Location.swift */; };
+		C0BD05231B03E7B00069031F /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BD05221B03E7B00069031F /* Message.swift */; };
 		C0C4F44C1A8D5D5300E4621C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C4F44B1A8D5D5300E4621C /* LoginViewController.swift */; };
 		C0C4F44E1A8D5DB200E4621C /* BeneficiosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C4F44D1A8D5DB200E4621C /* BeneficiosViewController.swift */; };
 		C0C4F4501A8D5E1D00E4621C /* LugaresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C4F44F1A8D5E1D00E4621C /* LugaresViewController.swift */; };
@@ -35,6 +42,7 @@
 		C0CFD2BF1A8BF07D006C0446 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0CFD2A81A8BEFAF006C0446 /* AudioToolbox.framework */; };
 		C0CFD2C21A8BF08C006C0446 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0CFD2C01A8BF08C006C0446 /* Bolts.framework */; };
 		C0CFD2C31A8BF08D006C0446 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0CFD2C11A8BF08C006C0446 /* Parse.framework */; };
+		C0F8E8081B050E8800DD1244 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F8E8071B050E8800DD1244 /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +68,13 @@
 		C0158BBD1A8AAFD1007F87AB /* MensajeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MensajeCell.swift; sourceTree = "<group>"; };
 		C06CEB971A8C169100A71DA1 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		C06CEB991A8CFDF900A71DA1 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		C0BD05121AFFDA150069031F /* Benefit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Benefit.swift; path = Model/Benefit.swift; sourceTree = "<group>"; };
+		C0BD05161B010B7B0069031F /* BenefitCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BenefitCell.swift; path = Cell/BenefitCell.swift; sourceTree = "<group>"; };
+		C0BD051A1B01162B0069031F /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Model/User.swift; sourceTree = "<group>"; };
+		C0BD051C1B03B4810069031F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		C0BD051E1B03B8710069031F /* PlaceAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlaceAnnotation.swift; path = Cell/PlaceAnnotation.swift; sourceTree = "<group>"; };
+		C0BD05201B03B8BA0069031F /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Location.swift; path = Model/Location.swift; sourceTree = "<group>"; };
+		C0BD05221B03E7B00069031F /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Message.swift; path = Model/Message.swift; sourceTree = "<group>"; };
 		C0C4F44B1A8D5D5300E4621C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C0C4F44D1A8D5DB200E4621C /* BeneficiosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeneficiosViewController.swift; sourceTree = "<group>"; };
 		C0C4F44F1A8D5E1D00E4621C /* LugaresViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LugaresViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +96,7 @@
 		C0CFD2C01A8BF08C006C0446 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		C0CFD2C11A8BF08C006C0446 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		C0CFD2C51A8BF137006C0446 /* RespiremosJuntos-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RespiremosJuntos-Bridging-Header.h"; sourceTree = "<group>"; };
+		C0F8E8071B050E8800DD1244 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0BD051D1B03B4810069031F /* MapKit.framework in Frameworks */,
 				C0CFD2BF1A8BF07D006C0446 /* AudioToolbox.framework in Frameworks */,
 				C0CFD2BE1A8BF076006C0446 /* libsqlite3.dylib in Frameworks */,
 				C0CFD2BC1A8BF069006C0446 /* libz.dylib in Frameworks */,
@@ -138,6 +155,8 @@
 		C0158B941A8A9B52007F87AB /* RespiremosJuntos */ = {
 			isa = PBXGroup;
 			children = (
+				C0BD05111AFFD95D0069031F /* Model */,
+				C0F8E8071B050E8800DD1244 /* TabBarController.swift */,
 				C0C4F44B1A8D5D5300E4621C /* LoginViewController.swift */,
 				C0C4F44D1A8D5DB200E4621C /* BeneficiosViewController.swift */,
 				C0158BBB1A8AA98A007F87AB /* MensajesViewController.swift */,
@@ -145,10 +164,10 @@
 				C0C4F45A1A8D632D00E4621C /* EnviarMensajesViewController.swift */,
 				C0C4F44F1A8D5E1D00E4621C /* LugaresViewController.swift */,
 				C0C4F4511A8D5EC600E4621C /* AgregarAmigosViewController.swift */,
+				C0C4F4531A8D5F0F00E4621C /* AppDelegate.swift */,
 				C0C4F4551A8D5F2700E4621C /* Cells */,
 				C0CFD2C41A8BF0C2006C0446 /* Objective-C */,
 				C0158BA01A8A9B52007F87AB /* Images.xcassets */,
-				C0C4F4531A8D5F0F00E4621C /* AppDelegate.swift */,
 				C0158B9D1A8A9B52007F87AB /* Main.storyboard */,
 				C0158BA21A8A9B52007F87AB /* LaunchScreen.xib */,
 				C0158B951A8A9B52007F87AB /* Supporting Files */,
@@ -181,10 +200,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C0BD05111AFFD95D0069031F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C0BD05121AFFDA150069031F /* Benefit.swift */,
+				C0BD05221B03E7B00069031F /* Message.swift */,
+				C0BD051A1B01162B0069031F /* User.swift */,
+				C0BD05201B03B8BA0069031F /* Location.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		C0C4F4551A8D5F2700E4621C /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				C0BD051E1B03B8710069031F /* PlaceAnnotation.swift */,
 				C0158BBD1A8AAFD1007F87AB /* MensajeCell.swift */,
+				C0BD05161B010B7B0069031F /* BenefitCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -192,6 +224,7 @@
 		C0CFD2AA1A8BEFB8006C0446 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C0BD051C1B03B4810069031F /* MapKit.framework */,
 				C06CEB991A8CFDF900A71DA1 /* ParseFacebookUtils.framework */,
 				C06CEB971A8C169100A71DA1 /* FacebookSDK.framework */,
 				C0CFD2C01A8BF08C006C0446 /* Bolts.framework */,
@@ -321,12 +354,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0C4F45B1A8D632D00E4621C /* EnviarMensajesViewController.swift in Sources */,
+				C0F8E8081B050E8800DD1244 /* TabBarController.swift in Sources */,
+				C0BD051F1B03B8710069031F /* PlaceAnnotation.swift in Sources */,
 				C0C4F4541A8D5F0F00E4621C /* AppDelegate.swift in Sources */,
 				C0C4F4501A8D5E1D00E4621C /* LugaresViewController.swift in Sources */,
+				C0BD05131AFFDA150069031F /* Benefit.swift in Sources */,
+				C0BD05171B010B7B0069031F /* BenefitCell.swift in Sources */,
+				C0BD05211B03B8BA0069031F /* Location.swift in Sources */,
 				C0C4F4521A8D5EC600E4621C /* AgregarAmigosViewController.swift in Sources */,
 				C0C4F44C1A8D5D5300E4621C /* LoginViewController.swift in Sources */,
 				C0C4F4591A8D612800E4621C /* AmigosViewController.swift in Sources */,
+				C0BD051B1B01162B0069031F /* User.swift in Sources */,
 				C0158BBC1A8AA98A007F87AB /* MensajesViewController.swift in Sources */,
+				C0BD05231B03E7B00069031F /* Message.swift in Sources */,
 				C0C4F44E1A8D5DB200E4621C /* BeneficiosViewController.swift in Sources */,
 				C0158BBE1A8AAFD1007F87AB /* MensajeCell.swift in Sources */,
 			);

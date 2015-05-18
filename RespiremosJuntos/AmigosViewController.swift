@@ -9,9 +9,15 @@
 import UIKit
 
 class AmigosViewController: UITableViewController {
+    
+    var friends = [User]()
+    
+    var user = PFUser.currentUser()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        getInfo()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -24,31 +30,70 @@ class AmigosViewController: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    // MARK: - get Info
+    
+    func getInfo(){
+        
+        UIApplication.sharedApplication().networkActivityIndicatorVisible = true
+        
+        var relation = user.relationForKey(User.HELPING)
+        
+        var query = relation.query()
+        query.orderByAscending("order")
+        query.findObjectsInBackgroundWithBlock {
+            (objects: [AnyObject]!, error: NSError!) -> Void in
+            
+            UIApplication.sharedApplication().networkActivityIndicatorVisible = false
+            
+            if error == nil {
+                NSLog("Successfully retrieved \(objects.count) messages.")
+                
+                for object in (objects as! [PFObject]){
+                    var user = User(fromParse: object)
+                    self.friends.append(user)
+                }
+                
+                self.tableView.reloadData()
+                
+            } else {
+                NSLog("Error: %@ %@", error, error.userInfo!)
+            }
+        }
+        
+    }
+    
 
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Potentially incomplete method implementation.
-        // Return the number of sections.
-        return 0
+        
+        return 1
     }
-
+    
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete method implementation.
-        // Return the number of rows in the section.
-        return 0
+        
+        return friends.count
     }
-
-    /*
+    
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as UITableViewCell
-
+        
+        //        let cell = tableView.dequeueReusableCellWithIdentifier("beneficioCell", forIndexPath: indexPath) as! BenefitCell
+        
+        let cell = UITableViewCell()
+        
         // Configure the cell...
-
+        
+        let friend = friends[indexPath.row]
+        
+        cell.textLabel?.text = friend.nombre
+        
         return cell
     }
-    */
-
+    
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
@@ -93,5 +138,7 @@ class AmigosViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
 
 }

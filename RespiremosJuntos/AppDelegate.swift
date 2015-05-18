@@ -12,17 +12,55 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+     //#0E8A82
+    static let colorDark = UIColor(red: 0x0E/255.0, green: 0x8A/255.0, blue: 0x82/255.0, alpha: 1.0 )
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-//        4FE8AB
         
         window?.tintColor = UIColor(red: 0x4f/255, green: 0xe8/255, blue: 0xab/255, alpha: 1.0)
+    Parse.setApplicationId("TgMyg4eDIlxjLIDsdjKqbFMnXA0dpF4URTvVgfz6", clientKey: "GKWTEGDGISG9mfKd96f2mCaDQtXiLQSAdl4QQMj3")
         
-        // Override point for customization after application launch.
+        PFFacebookUtils.initializeFacebook()
+        
+        if (NSProcessInfo().operatingSystemVersion.majorVersion >= 7) {
+            
+            application.setStatusBarStyle(UIStatusBarStyle.LightContent, animated: true)
+            
+        }
+        
+        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName : UIColor(white: 1.0, alpha: 0.7)], forState: UIControlState.Normal)
+        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName : UIColor.whiteColor()], forState: UIControlState.Selected)
+        
+//        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName : UIColor.whiteColor()], forState: UIControlState.Normal)
+        
+//        UITabBar.appearance().ti = UIColor(white: 1.0, alpha: 0.7)
+        
+//        UIView.appearance().cont
+        
+//        UITabBar.appearance().selectionIndicatorImage = UIImage().im
+//        [[UITabBarItem appearance] setTitleTextAttributes:@{ NSForegroundColorAttributeName : [UIColor yellowColor] }
+//        forState:UIControlStateNormal];
+//        [[UITabBarItem appearance] setTitleTextAttributes:@{ NSForegroundColorAttributeName : [UIColor whiteColor] }
+//        forState:UIControlStateSelected];
+        
         return true
     }
+    
+    func application(application: UIApplication,
+        openURL url: NSURL,
+        sourceApplication: String?,
+        annotation: AnyObject?) -> Bool {
+            return FBAppCall.handleOpenURL(url, sourceApplication:sourceApplication,
+                withSession:PFFacebookUtils.session())
+    }
+    
+    func applicationDidBecomeActive(application: UIApplication) {
+        FBAppCall.handleDidBecomeActiveWithSession(PFFacebookUtils.session())
+    }
+    
 
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -38,12 +76,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
     }
 
-    func applicationDidBecomeActive(application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-    }
 
     func applicationWillTerminate(application: UIApplication) {
-        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+        PFFacebookUtils.session().close()
     }
 
 

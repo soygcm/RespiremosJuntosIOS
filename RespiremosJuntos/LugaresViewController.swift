@@ -7,20 +7,67 @@
 //
 
 import UIKit
+import MapKit
 
 class LugaresViewController: UIViewController {
+    
+    var locations = [Location]()
 
+    @IBOutlet weak var mapView: MKMapView!
+    let regionRadius: CLLocationDistance = 1000
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        getInfo()
 
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
+    
+    // MARK: - get Info
+    
+    func getInfo(){
+        
+        UIApplication.sharedApplication().networkActivityIndicatorVisible = true
+                
+        var query = PFQuery(className: Location.CLASS)
+        query.findObjectsInBackgroundWithBlock {
+            (objects: [AnyObject]!, error: NSError!) -> Void in
+            
+            UIApplication.sharedApplication().networkActivityIndicatorVisible = false
+            
+            if error == nil {
+                NSLog("Successfully retrieved \(objects.count) messages.")
+                
+                for object in (objects as! [PFObject]){
+                    var location = Location(fromParse: object)
+                    self.locations.append(location)
+                }
+                
+                self.addAnnotations()
+                
+            } else {
+                NSLog("Error: %@ %@", error, error.userInfo!)
+            }
+        }
+        
+    }
+    
+    func addAnnotations(){
+        
+        for location in locations{
+            
+            var place =  PlaceAnnotation(location: location)
+            
+            mapView.addAnnotation(place)
+            
+        }
+        
+       
+    }
+
+
 
     /*
     // MARK: - Navigation
